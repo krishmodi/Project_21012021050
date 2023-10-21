@@ -7,13 +7,14 @@
     tools:context=".DetailActivity">
 
     <ScrollView
+        android:id="@+id/scrollView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/main_Background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -32,23 +33,23 @@
                     android:id="@+id/posterBigimg"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:alpha="0.1"
+                    android:scaleType="centerCrop"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:alpha="0.1"
-                    android:scaleType="centerCrop"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/posterNormaling"
                     android:layout_width="210dp"
                     android:layout_height="300dp"
-
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/posterBigimg"
-                    app:shapeAppearanceOverlay="@style/roundedImageRounded"/>
+                    app:shapeAppearanceOverlay="@style/roundedImageView" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -84,11 +85,12 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:background="@drawable/bg_shadow"
                 android:layout_marginStart="64dp"
                 android:layout_marginEnd="64dp"
+                android:background="@drawable/bg_shadow"
                 app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
@@ -97,14 +99,14 @@
                     android:id="@+id/movieNametxt"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:maxLines="2"
                     android:text="Title"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="20dp"
-                    android:maxLines="2"
-                    android:layout_marginStart="24dp"
-                    android:layout_marginEnd="24dp"
-                    android:layout_marginBottom="24dp"
                     app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -160,19 +162,80 @@
                 android:id="@+id/textView22"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/ic_round_info_24"
-                android:drawableTint="@color/white"
-                android:text="Summary"
                 android:layout_margin="16dp"
+                android:drawableStart="@drawable/ic_round_info_24"
                 android:drawablePadding="5dp"
+                android:drawableTint="@color/white"
                 android:gravity="center_vertical"
-                android:textSize="16dp"
-
+                android:text="Summary"
                 android:textColor="@color/white"
+
+                android:textSize="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+            <TextView
+                android:id="@+id/movieSummaryInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="test"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView22"
+                app:layout_constraintStart_toStartOf="@+id/textView22"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableStart="@drawable/ic_round_person_24"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/white"
+                android:gravity="center_vertical"
+                android:text="Actor"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/movieSummaryInfo"
+                app:layout_constraintStart_toStartOf="@+id/movieSummaryInfo"
+                app:layout_constraintTop_toBottomOf="@+id/movieSummaryInfo" />
+
+            <TextView
+                android:id="@+id/movieActorInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="test"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView12"
+                app:layout_constraintStart_toStartOf="@+id/textView12"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ImagesRecycleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/movieActorInfo" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/detailLoding"
+        style="?android:attr/progressBarStyle"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
