@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/main_Background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     tools:context=".Activity.LoginActivity">
 
     <ScrollView
@@ -74,7 +76,7 @@
                 android:textSize="14dp"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button2"
+                android:id="@+id/LoginBtn"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/btn_backgroung"
