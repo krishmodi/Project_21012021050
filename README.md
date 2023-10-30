@@ -121,7 +121,7 @@ This Movie Rater App is licensed is Free and Open source
 
 We would like to express our gratitude to the following third-party libraries and APIs that greatly contributed to the development of this app:
 
-- **Postman API**: A valuable source of weather data that powers the app's real-time weather information and forecasts, helping us deliver accurate and reliable weather updates. [OpenWeather API Website](https://www.postman.com/)
+- **Postman API**: A valuable source of weather data that powers the app's real-time weather information and forecasts, helping us deliver accurate and reliable weather updates.(https://www.postman.com/)
 
 We appreciate the developers and communities behind these tools for making them available for free and enhancing our project.
 
