@@ -102,7 +102,7 @@ Guide users through the process of installing your application:
 
 ### ScreenShot
 
-<img src="https://github.com/AryanParmar007/WeatherApp_21012011061/blob/master/app/src/main/res/sunny_weather.jpg" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" height="400" /> 
+<!--<img src="https://github.com/AryanParmar007/WeatherApp_21012011061/blob/master/app/src/main/res/sunny_weather.jpg" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" height="400" /> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <img src="https://github.com/AryanParmar007/WeatherApp_21012011061/blob/master/app/src/main/res/cloudy_weather.jpg" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" height="400" />   
@@ -110,7 +110,7 @@ Guide users through the process of installing your application:
 <img src="https://github.com/AryanParmar007/WeatherApp_21012011061/blob/master/app/src/main/res/Rainy_weather.jpg" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" height="400" /> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-<img src="https://github.com/AryanParmar007/WeatherApp_21012011061/blob/master/app/src/main/res/snow_weather.jpg" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" height="400" />
+<img src="https://github.com/AryanParmar007/WeatherApp_21012011061/blob/master/app/src/main/res/snow_weather.jpg" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" height="400" />-->
 
 
 ## License
